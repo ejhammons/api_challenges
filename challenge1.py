@@ -35,17 +35,17 @@ while ( (server1.status != "ACTIVE") or (server2.status != "ACTIVE") or (server3
     server3 = cs.servers.get(server3.id)
 
 print "Server name: ", server1.name
-print "Server IP: ", server1.networks['public']
+print "Server IP: ", str(server1.accessIPv4)
 print "Server root password: ", server1_pw
 
 print
 
 print "Server name: ", server2.name
-print "Server IP: ", server2.networks
+print "Server IPs: ", str(server2.accessIPv4)
 print "server root password: ", server2_pw
 
 print
 
 print "Server name: ", server3.name
-print "Server IP: ", server3.networks
+print "Server IPs: ", str(server3.accessIPv4)
 print "server root password: ", server3_pw
