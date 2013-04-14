@@ -7,7 +7,6 @@ parser = argparse.ArgumentParser(description='Upload a directory to CloudFiles.'
 parser.add_argument('source_directory')
 parser.add_argument('dest_container')
 args=parser.parse_args()
-print args
 
 source_directory = os.path.abspath(args.source_directory)
 dest_container = args.dest_container
