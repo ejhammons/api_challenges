@@ -8,7 +8,7 @@ parser.add_argument('source_directory')
 parser.add_argument('dest_container')
 args=parser.parse_args()
 
-source_directory = os.path.abspath(args.source_directory)
+source_directory = os.path.abspath(os.path.expanduser(args.source_directory))
 dest_container = args.dest_container
 if ( not os.path.exists(source_directory) ):
     print "Directory ", source_directory, " does not exist!"
