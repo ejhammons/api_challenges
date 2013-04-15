@@ -3,10 +3,10 @@ import time
 import argparse
 import pyrax
 
-index_page = """<head><title>API Challenge website</title></head>
+index_page = """<html><head><title>API Challenge website</title></head>
     <body>
         Welcome to my API challenge website!<br>
-    </body>"""
+    </body></html>"""
 
 parser = argparse.ArgumentParser(description="Create a website hosted on CloudFiles.")
 parser.add_argument("fqdn")
